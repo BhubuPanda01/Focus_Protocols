@@ -26,8 +26,16 @@
     ],
     "win": {
       "target": [
-        "portable"
+        "portable",
+        "nsis"
       ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Dopamine Zero"
     }
   },
   "devDependencies": {
