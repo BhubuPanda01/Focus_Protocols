@@ -78,6 +78,9 @@ interface GameContextType {
   triggerEmergencyPause: (reason: string) => void;
   manualFailRun: (reason: string) => void;
   
+  // Challenge switching
+  changeActiveChallenge: (challengeId: number) => void;
+
   // Settings & System
   updateSettings: (newSettings: Partial<UserSettings>) => void;
   exportDataJson: () => string;
@@ -646,6 +649,16 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setProgressState(updatedProgress);
   };
 
+  // Switch Active Challenge Day
+  const changeActiveChallenge = (challengeId: number) => {
+    const clamped = Math.min(7, Math.max(1, challengeId));
+    updateActiveDay(d => ({
+      ...d,
+      challengeId: clamped,
+    }));
+    tacticalAudio.playClick();
+  };
+
   // Settings
   const updateSettings = (newPartial: Partial<UserSettings>) => {
     const updated = { ...settings, ...newPartial };
@@ -718,6 +731,7 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
         submitDailyReport,
         triggerEmergencyPause,
         manualFailRun,
+        changeActiveChallenge,
         updateSettings,
         exportDataJson,
         importDataJson,

@@ -18,6 +18,7 @@ import { useGame, GameProvider } from './context/GameContext';
 import { Header } from './components/Header';
 import { ClassModeBar } from './components/ClassModeBar';
 import { FocusTimer } from './components/FocusTimer';
+import { TodayHeroChallenge } from './components/TodayHeroChallenge';
 import { MissionCard } from './components/MissionCard';
 import { SideQuestCard } from './components/SideQuestCard';
 import { UrgeAttackModal } from './components/UrgeAttackModal';
@@ -71,6 +72,16 @@ const DashboardContent: React.FC = () => {
       {/* Main Tactical Dashboard Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
         
+        {/* ⭐ PRIORITY 1: TODAY'S HIGHLIGHTED CHALLENGE HERO & 7-DAY ROADMAP */}
+        <TodayHeroChallenge
+          onOpenRules={() => setIsRulesOpen(true)}
+          onOpenReport={() => setIsReportOpen(true)}
+          onScrollToTimer={() => {
+            const el = document.getElementById('focus-timer-section');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}
+        />
+
         {/* Urgent Action Floating Bar / Urge Intercept Button */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-xl bg-gradient-to-r from-amber-950/30 via-slate-900/60 to-cyan-950/30 border border-amber-500/30 shadow-hud-amber">
           <div className="flex items-center gap-3">
@@ -150,7 +161,9 @@ const DashboardContent: React.FC = () => {
           {/* Right Operational Column: Focus Timer & Progress Metrics */}
           <div className="lg:col-span-5 space-y-6">
             {/* The Main HUD Focus Timer Engine */}
-            <FocusTimer />
+            <div id="focus-timer-section">
+              <FocusTimer />
+            </div>
 
             {/* Daily Operational Progress Box */}
             <div className="hud-panel rounded-xl p-5 border border-[#1E2C4A] space-y-4">
