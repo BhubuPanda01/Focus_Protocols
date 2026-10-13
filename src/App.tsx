@@ -231,7 +231,7 @@ const DashboardContent: React.FC = () => {
                   Enforce Habit With OS-Level Tools:
                 </strong>
                 <p>
-                  To reinforce your browser commitment, pair Focus Protocol with <strong>Cold Turkey Blocker</strong> on PC and <strong>AppBlock</strong> or <strong>Digital Wellbeing</strong> on your smartphone.
+                  To reinforce your browser commitment, pair Dopamine Zero with <strong>Cold Turkey Blocker</strong> on PC and <strong>AppBlock</strong> or <strong>Digital Wellbeing</strong> on your smartphone.
                 </p>
               </div>
 

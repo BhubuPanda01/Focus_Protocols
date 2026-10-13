@@ -1,4 +1,4 @@
-name: Deploy Focus Protocol to GitHub Pages
+name: Deploy Dopamine Zero to GitHub Pages
 
 on:
   push:

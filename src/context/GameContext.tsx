@@ -660,7 +660,7 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
       settings,
       progress,
       exportedAt: new Date().toISOString(),
-      app: 'FOCUS_PROTOCOL_OP_FEB_6',
+      app: 'DOPAMINE_ZERO_OP_FEB_6',
     };
     return JSON.stringify(backup, null, 2);
   };

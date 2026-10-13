@@ -77,7 +77,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">
-                  FOCUS PROTOCOL
+                  DOPAMINE ZERO
                 </span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded bg-violet-950/60 border border-violet-500/40 text-violet-300 font-mono">
                   {settings.callsign || 'OPERATOR'}
@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
                 OPERATION FEBRUARY 6
               </h1>
               <p className="text-[11px] text-slate-400 italic hidden sm:block">
-                "Defeat the distractions. Complete the mission. Earn your focus."
+                "Zero feeds. Pure execution. Earn your focus."
               </p>
             </div>
           </div>

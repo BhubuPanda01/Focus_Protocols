@@ -64,10 +64,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onComp
             INITIAL OPERATIONAL BRIEFING
           </div>
           <h2 className="text-2xl font-black font-mono tracking-wider text-white uppercase">
-            FOCUS PROTOCOL // OPERATION FEBRUARY 6
+            DOPAMINE ZERO // OPERATION FEBRUARY 6
           </h2>
           <p className="text-xs text-slate-400 italic">
-            "Defeat the distractions. Complete the mission. Earn your focus."
+            "Zero feeds. Pure execution. Earn your focus."
           </p>
         </div>
 
@@ -336,7 +336,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onComp
                     : 'bg-slate-800 text-slate-500 border border-slate-700 cursor-not-allowed'
                 }`}
               >
-                {allAcknowledged ? 'ENGAGE FOCUS PROTOCOL' : 'Acknowledge All Commitments to Begin'}
+                {allAcknowledged ? 'ENGAGE DOPAMINE ZERO' : 'Acknowledge All Commitments to Begin'}
               </button>
             </div>
           </div>

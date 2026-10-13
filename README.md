@@ -1,6 +1,6 @@
-# FOCUS PROTOCOL — OPERATION FEBRUARY 6
+# DOPAMINE ZERO — OPERATION FEBRUARY 6
 
-> *"Defeat the distractions. Complete the mission. Earn your focus."*
+> *"Zero feeds. Pure execution. Earn your focus."*
 
 A tactical mission-control web application designed for competitive exam candidates to break impulsive digital distractions (YouTube Shorts, Instagram Reels, desk phone checking, eating while watching videos) and forge consistent 45-minute deep-work habits leading to the **February 6, 2027** exam date.
 
