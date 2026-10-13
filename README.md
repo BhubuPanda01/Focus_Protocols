@@ -1,4 +1,4 @@
-# DOPAMINE ZERO — OPERATION FEBRUARY 6
+# DOPAMINE ZERO
 
 > *"Zero feeds. Pure execution. Earn your focus."*
 

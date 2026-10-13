@@ -64,7 +64,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onComp
             INITIAL OPERATIONAL BRIEFING
           </div>
           <h2 className="text-2xl font-black font-mono tracking-wider text-white uppercase">
-            DOPAMINE ZERO // OPERATION FEBRUARY 6
+            DOPAMINE ZERO
           </h2>
           <p className="text-xs text-slate-400 italic">
             "Zero feeds. Pure execution. Earn your focus."

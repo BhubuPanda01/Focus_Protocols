@@ -76,9 +76,6 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">
-                  DOPAMINE ZERO
-                </span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded bg-violet-950/60 border border-violet-500/40 text-violet-300 font-mono">
                   {settings.callsign || 'OPERATOR'}
                 </span>
@@ -86,8 +83,8 @@ export const Header: React.FC<HeaderProps> = ({
                   {getRank(progress.totalXp)}
                 </span>
               </div>
-              <h1 className="text-lg sm:text-xl font-extrabold tracking-wider text-slate-100 uppercase">
-                OPERATION FEBRUARY 6
+              <h1 className="text-xl sm:text-2xl font-black font-mono tracking-widest text-white uppercase">
+                DOPAMINE ZERO
               </h1>
               <p className="text-[11px] text-slate-400 italic hidden sm:block">
                 "Zero feeds. Pure execution. Earn your focus."
